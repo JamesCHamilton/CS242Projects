@@ -15,7 +15,7 @@ Choose at random the numbers in the array (including the sign).
 2. Test the algorithms with different values of n and fill the
 following table with the running times measured in nanoseconds (put
 the table in the code header).
-![Table thing](Table.png "For number 2")
+
 
 You may run into problems, such as running out of memory or the
 program taking too much time. If that is the case, adjust the values of
