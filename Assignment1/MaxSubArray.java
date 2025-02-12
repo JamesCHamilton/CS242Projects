@@ -2,7 +2,9 @@ package Assignment1;
 
 public class MaxSubArray {
     
-    private static int bruteForce(int[] a){
+    public static int bruteForce(int[] a){return bruteForceHelper(a);}
+
+    private static int bruteForceHelper(int[] a){
         int maxSub = Integer.MIN_VALUE;
         int length = a.length;
         for(int i = 0; i < length; i++){
