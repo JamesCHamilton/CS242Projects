@@ -50,7 +50,7 @@ public class Main{
  *  Algorithms and Computing Theory
  *
  *  Course: CS 242
- *  Team members: James Hamilton, Edmund Zhong
+ *  Team members: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
  *  Collaborators: None
  *  References: PUT THE LINKS TO YOUR SOURCES HERE
  *
