@@ -9,8 +9,10 @@ public class MaxSubArray {
     private static int bruteForceHelper(int[] a){
         int maxSub = Integer.MIN_VALUE;
         int length = a.length;
+        //first pointer to the first element
         for(int i = 0; i < length; i++){
             int sum = 0;
+            //second pointer to the number after the "i" element
             for(int j = i; j < length; j++){
                 sum = sum + a[j];
                 maxSub = Integer.max(maxSub, sum);
