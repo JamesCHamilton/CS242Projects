@@ -86,5 +86,11 @@ algorithm that solves the problem in O(n
  *    Kadanes               6200 nanosecs       10200 nanosecs      46100 nanosecs      490500 nanosecs     3416500 nanosecs
  *
  *
- * 3. Our data clearly shows that the divide and conquer algorithm is alot faster than the brute force algorithm. It proves that O(n log n) is faster than O(n^2). 
+ * 3. Our data clearly shows that the divide and conquer algorithm is alot faster than the brute force algorithm. It proves that O(n log n) is faster than O(n^2). This applies when
+ * looking at n when 10^4 compared to 10^5. It is close to quadratic to its inital amount. Also looking at the divide and conquer at n = 10^4 and n = 10^5, at 2007300 nanoseconds to 
+ * 13636600 nanoseconds, it is close to loglinear time complexity. When n is multiplied by 10^5, for brute force algorithm it will take 3232845400 nanoseconds as compared to 
+ * 13636600 nanoseconds for the divide and conquer algorithm. However, both of these algorithms are slower than kadanes algorithm which is linear at O(n) with a time of 
+ * 3416500 nanoseconds. Brute force algorithm would take O(n^2) time because it uses 2 for loops that loops through all possibile possibilities which is quadratic time. It checks every possible subarray.
+ * Divide and conquer algorithm would take O(n log n) time because it splits the array in half repeatedly which takes log n time. Then, it will merge the sorted halves together taking a total of n time. Combined, it will be O(n log n) time. 
+ * Kadanes is O(n) time because it only loops through the array once, after each number, it would update 2 variables keeping track of the max and max subarray and continues to do so until the end of the array which is O(n).
  *************************************************************************/
