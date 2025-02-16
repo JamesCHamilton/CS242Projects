@@ -10,7 +10,6 @@ public class Main{
         int n = scanner.nextInt();
 
         // Generate random array of length n
-        // (including sign, i.e. positive/negative)
         // For example, random integers in range -100..+100 (note to self) 
         int[] arr = new int[n];
         Random rand = new Random();
@@ -32,9 +31,7 @@ public class Main{
         long divideTime = endTime - startTime;
         System.out.println("Divide & Conquer result = " + maxDivideConquer + " in " + divideTime + " nanosecs.");
 
-        // --- 3) (Extra Credit) Time the O(n) Kadane’s Algorithm ---
-        // Uncomment if you want to include Kadane’s:
-        
+        // --- 3) (Extra Credit) Time the O(n) Kadane’s Algorithm ---        
         startTime = System.nanoTime();
         int maxKadane = MaxSubArray.kadaneMaxSubarray(arr);
         endTime = System.nanoTime();
