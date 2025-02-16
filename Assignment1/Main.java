@@ -83,6 +83,11 @@ algorithm that solves the problem in O(n
  *   -------
  *
  *   PUT ALL NON-CODING ANSWERS HERE
+ *                          n = 10^1            n = 10^2            n = 10^3            n = 10^4            n= 10^5                 
+ * 2. Brute force           529400 nanosecs     765300 nanosecs     4383600 nanosecs    39472200 nanosecs   3232845400 nanosecs
+ *    Divide and conquer    33300 nanosecs      64400 nanosecs      489000 nanosecs     2007300 nanosecs    13636600 nanosecs
+ *    Kadanes               6200 nanosecs       10200 nanosecs      46100 nanosecs      490500 nanosecs     3416500 nanosecs
  *
  *
+ * 3. Our data clearly shows that the divide and conquer algorithm is alot faster than the brute force algorithm. It proves that O(n log n) is faster than O(n^2). 
  *************************************************************************/
