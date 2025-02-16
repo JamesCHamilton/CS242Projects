@@ -1,5 +1,11 @@
 package Assignment1;
 
+
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: February 14, 2025
+// Purpose/Description: Finding the maximum subarray sum using three different algorithms, bruteForce O(n^2), 
+//divideAndConquer O(n log n), and kadaneMaxSubarray O(n).
+// Visible Methods and Data: bruteForce(int[] a), divideAndConquerMaxSubarray(int[] a, int low, int high), kadaneMaxSubarray(int[] a)
 public class MaxSubArray {
     
     public static int bruteForce(int[] a){return bruteForceHelper(a);}

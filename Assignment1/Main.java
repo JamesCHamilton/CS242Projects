@@ -3,6 +3,12 @@ package Assignment1;
 import java.util.Random;
 import java.util.Scanner;
 
+
+
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: February 14, 2025
+// Purpose/Description: Testing time output of the algorithms found in MaxSubArray.java
+// Visible Methods and Data: main(String[] args)
 public class Main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
