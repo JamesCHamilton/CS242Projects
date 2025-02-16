@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter size of the array (n): ");
-        int n = sc.nextInt();
+        int n = scanner.nextInt();
 
         // Generate random array of length n
         // (including sign, i.e. positive/negative)
-        // For example, random integers in range -100..+100
+        // For example, random integers in range -100..+100 (note to self) 
         int[] arr = new int[n];
         Random rand = new Random();
         for (int i = 0; i < n; i++) {
@@ -20,32 +20,28 @@ public class Main{
 
         // --- 1) Time the O(n^2) brute force ---
         long startTime = System.nanoTime();
-        int maxBrute = bruteForceMaxSubarray(arr);
+        int maxBrute = MaxSubArray.bruteForce(arr);
         long endTime = System.nanoTime();
         long bruteTime = endTime - startTime;
-        System.out.println("Brute force result = " + maxBrute 
-                           + " in " + bruteTime + " nanosecs.");
+        System.out.println("Brute force result = " + maxBrute + " in " + bruteTime + " nanosecs.");
 
         // --- 2) Time the O(n log n) divide-and-conquer ---
         startTime = System.nanoTime();
-        int maxDivideConquer = divideAndConquerMaxSubarray(arr, 0, arr.length - 1);
+        int maxDivideConquer = MaxSubArray.divideAndConquerMaxSubarray(arr, 0, arr.length - 1);
         endTime = System.nanoTime();
         long divideTime = endTime - startTime;
-        System.out.println("Divide & Conquer result = " + maxDivideConquer 
-                           + " in " + divideTime + " nanosecs.");
+        System.out.println("Divide & Conquer result = " + maxDivideConquer + " in " + divideTime + " nanosecs.");
 
         // --- 3) (Extra Credit) Time the O(n) Kadane’s Algorithm ---
         // Uncomment if you want to include Kadane’s:
-        /*
+        
         startTime = System.nanoTime();
-        int maxKadane = kadaneMaxSubarray(arr);
+        int maxKadane = MaxSubArray.kadaneMaxSubarray(arr);
         endTime = System.nanoTime();
         long kadaneTime = endTime - startTime;
-        System.out.println("Kadane’s (DP) result = " + maxKadane
-                           + " in " + kadaneTime + " nanosecs.");
-        */
+        System.out.println("Kadane’s (DP) result = " + maxKadane + " in " + kadaneTime + " nanosecs.");
 
-        sc.close();
+        scanner.close();
     }
 }
 
