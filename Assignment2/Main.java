@@ -3,6 +3,10 @@ package Assignment2;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: March 13, 2025
+// Purpose/Description: Testing time output of the algorithms found in Sorter.java
+// Visible Methods and Data: main(String[] args)
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

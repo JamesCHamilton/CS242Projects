@@ -3,6 +3,10 @@ package Assignment2;
 import java.util.ArrayList;
 import java.util.Random;
 
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: March 13, 2025
+// Purpose/Description: implements quicksort, radixsort, generateArray
+// Visible Methods and Data: generateArray(int n, int r), quickSort(int[] arr, int p, int r), radixSort(int[] arr)
 public class Sorter {
 
     public static int[] generateArray(int n, int r) {return generateArrayHelper(n, r);}
