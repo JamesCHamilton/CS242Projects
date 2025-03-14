@@ -54,7 +54,7 @@ public class Sorter {
         swap(arr, pivotIndex, r); // Move pivot to end.
         int pivot = arr[r];
         int i = p - 1;
-        for (int j = p; j < r; j++) {
+        for (int j = p; j < r; j++) {//compares j to pivot 
             if (arr[j] <= pivot) {
                 i++;
                 swap(arr, i, j);
