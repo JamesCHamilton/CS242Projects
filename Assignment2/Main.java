@@ -76,16 +76,32 @@ have many repeated items. Specifically, do the following.
  * 10       0ms     0ms     0ms     1ms     2ms     17ms
  * 100      0ms     0ms     0ms     1ms     5ms     25ms
  * 1000     0ms     0ms     0ms     4ms     16ms    82ms
- * 10000    0ms     0ms     0ms     5ms     25ms
- * 100000   0ms     0ms     0ms     4ms     24ms
+ * 10000    0ms     0ms     0ms     5ms     25ms    Error
+ * 100000   0ms     0ms     0ms     4ms     24ms    Error
  *      
  * Radix Sort Running Time
  *          1      10     100      1000    10000   100000      -n
  * 1        0ms     0ms     0ms     0ms     2ms     11ms
  * 10       0ms     0ms     0ms     0ms     2ms     11ms
- * 100      0ms     0ms     0ms     0ms     2ms     12s
+ * 100      0ms     0ms     0ms     0ms     2ms     12ms
  * 1000     0ms     0ms     0ms     0ms     2ms     11ms
- * 10000    0ms     0ms     0ms     0ms     2ms
- * 100000   0ms     0ms     0ms     0ms     2ms
+ * 10000    0ms     0ms     0ms     0ms     2ms     Error
+ * 100000   0ms     0ms     0ms     0ms     2ms     Error
  * 
- * */
+ * 
+ * 
+ * 4. Based on the running times observed, it seems as though Radix sort is a better sorting algorithm than quicksort.
+ * This is because, in every single iteration of n and r, radix sort does it in less time than quick sort.
+ * Both alogirhtms were similar until n got to 1000. Quick sort started taking between 1-5ms when n was 1000 while
+ * Radix sort continued to take 0ms to sort it. This is more drastic when n is 10000 and 100000.
+ * When n was 10000, quick sort went from 5ms at r=100 to 16ms at r=1000. Radix sort continued to do it in
+ * 2ms for when n was 10000. When n because 100000, radix sort did take longer at around 11-12ms but quick sort still
+ * did it from 19ms at r=1 to 82ms at r=1000. Yes, the repetitions do have an impact but mostly for quick sort. In quick sort when n
+ * became 1000, as r increased, so did the runtime. this is a continuing trend when n was greater than 1000 such as in n= 10000 
+ * when r was 1, it was 2ms but when r was 100000, it became 24 ms. This was only true for quick sort, on the other hand, radix sort
+ * continued to take the same time even though r increased. When n was 10000, and r was increased, it still was 2ms for radix sort.
+ * For instance, when n= 10000 and r = 100, quick sort took 5ms but when n was increased to 100000 the run time increased to 25ms 
+ * which indicates a rougly linear increase. As r increases, quicksort's running time shows a noticable increase showing that
+ * the number of repetitions does have an impact on its performance. Radix sort running times stable as the number of repetitions increase showing
+ * that it is less affected by the number of repetitions. 
+ */
