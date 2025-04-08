@@ -76,16 +76,14 @@ public class TextJustification {
         int i = 0;
         while (i < W.length) {
             result.add(i);
-            // Move i to where we said the next line starts
-            if (breaks[i] == i) {
-                // If breaks[i] never got updated, it means no solution could be found
-                // that fits these words. You might handle that differently if you prefer.
-                // For now, just force a single-word line to avoid infinite loop:
+            if (breaks[i] <= i || breaks[i] > W.length) {
+                // Safety fallback: avoid infinite loop or out of bounds
                 i++;
             } else {
                 i = breaks[i];
             }
         }
+
         return result;
     }
 

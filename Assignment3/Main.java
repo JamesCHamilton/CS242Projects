@@ -1,5 +1,7 @@
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -49,6 +51,10 @@ justification using Dynamic Programming is attached.
  * The unjust appears horizontal because there are only spaces between the letters instead of just.txt that has an entire line between the letters. 
  * MS word is using a greedy approach because it does it in the shortest time possible which in this case is having a space between the letters instead of having an entire line difference.
  * This approach is greedy because it is an algorithm that finds the solution to the problem in the shortest amount of time. 
+ * 
+ * 6. just.txt tends to follow a more regular punctuation and spacing pattern, whereas unjust.txt includes more erratic placement of commas, periods, and spacing, implying more distortion or corruption.
+unjust.txt introduces extra characters or alterations in chunks, disrupting some sequences that were intact in just.txt.
+source = https://libraryofbabel.info/book.cgi?2p-w1-s1-v23:114
  *
  *************************************************************************/
 
@@ -74,6 +80,18 @@ public class Main {
             }
             W[i] = "a".repeat(len);
         }
+
+        // File inputFile = new File("C:/Users/meela/Downloads/Classes/CS242Projects/Assignment3/input.txt");
+        // Scanner fileScanner = new Scanner(inputFile);
+        // List<String> wordList = new ArrayList<>();
+
+        // while (fileScanner.hasNext()) {
+        //     wordList.add(fileScanner.next());
+        // }
+
+        // fileScanner.close();
+
+        // String[] W = wordList.toArray(new String[0]);
 
         List<Integer> L = TextJustification.split(W, omega);
         TextJustification.justify(W, L, omega, "just.txt");
