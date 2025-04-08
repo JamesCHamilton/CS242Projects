@@ -3,6 +3,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: April 7, 2025
+// Purpose/Description: implements text justification using dynamic programming
+// Visible Methods and Data: badness(String[] W, int i, int j, int omega), memoizedMinimumBadness(String[] W, int i, int[] memo, int[] breaks, int omega), split(String[] W, int omega), justify(String[] W, List<Integer> L, int omega, String filename)
 public class TextJustification {
 
     // Calculate the badness of a line
