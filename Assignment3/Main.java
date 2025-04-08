@@ -45,7 +45,10 @@ justification using Dynamic Programming is attached.
  *   -------
  *
  *   PUT ALL NON-CODING ANSWERS HERE
- *
+ *  5. The result of just.txt and unjust.txt are different. They hold they same amount of letters in this case, a's. The just line appears vertical because it has line breaks.
+ * The unjust appears horizontal because there are only spaces between the letters instead of just.txt that has an entire line between the letters. 
+ * MS word is using a greedy approach because it does it in the shortest time possible which in this case is having a space between the letters instead of having an entire line difference.
+ * This approach is greedy because it is an algorithm that finds the solution to the problem in the shortest amount of time. 
  *
  *************************************************************************/
 
