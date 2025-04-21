@@ -48,8 +48,8 @@ implementation of DFS.
  * 2.               |E| = |V | − 1              |E| = ⌊(|V | − 1)3/2            |E| = (|V | − 1)2
 ⌋
  * |V | = 10        0.1226 ms                   0.087 ms                        
- * |V | = 100       
- * |V | = 1000
+ * |V | = 100       0.4625 ms                   0.2646 ms
+ * |V | = 1000      0.5757 ms                   3.6417 ms  
  *
  * 
  * ) Give an approximate formula (with constants, not big-O)
