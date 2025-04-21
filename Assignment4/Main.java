@@ -2,6 +2,51 @@ package Assignment4;
 import java.util.Random;
 import java.util.Scanner;
 import Assignment4.DFS.Graph;
+/*************************************************************************
+ *
+ *  Pace University
+ *  Spring 2024
+ *  Algorithms and Computing Theory
+ *
+ *  Course: CS 242
+ *  Team members: Edmund Zhong, James Hamilton, Hiruka Gamage
+ *  Collaborators: PUT THE NAME OF ANY COLLABORATORS OUTSIDE YOUR TEAM HERE, IF NONE, PUT NONE
+ *  References: PUT THE LINKS TO YOUR SOURCES HERE
+ *
+ *  Assignment: 4
+ *  Problem: Depth First Search 
+ *  Description: Depth First Search (DFS) is a fundamental graph traversal
+used as building block to solve important graph problems such as Topological
+Sort, finding Strongly Connected Components, and others. Hence, the time
+efficiency of those algorithms depends heavily on implementing efficiently
+DFS. Given a directed graph G = {V, E} encoded as an adjacency list, an
+efficient implementation of DFS runs in O(|V | + |E|) steps. The purpose of
+this homework is to evaluate experimentally the performance of an efficient
+implementation of DFS.
+ *
+ *  Input: 
+ *  Output: 
+ *
+ *  Visible data fields:
+ *  COPY DECLARATION OF VISIBLE DATA FIELDS HERE
+ *
+ *  Visible methods:
+ *  COPY SIGNATURE OF VISIBLE METHODS HERE
+ *
+ *
+ *   Remarks
+ *   -------
+ *
+ *   PUT ALL NON-CODING ANSWERS HERE
+ *
+ * 
+ * 2.               |E| = |V | − 1              |E| = ⌊(|V | − 1)3/2            |E| = (|V | − 1)2
+⌋
+ * |V | = 10        0.1226 ms                   0.087 ms                        
+ * |V | = 100
+ * |V | = 1000
+ *
+ *************************************************************************/
 
 public class Main {
     public static void main(String[] args) {
