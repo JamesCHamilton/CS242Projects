@@ -2,7 +2,6 @@ package Assignment4;
 import java.util.Random;
 import java.util.Scanner;
 import Assignment4.DFS.Graph;
-
 // Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
 // Date: April 20,2025
 // Purpose/Description: evaluating experimentally the performance of an efficient implementation of DFS. 
@@ -49,9 +48,19 @@ implementation of DFS.
  * 2.               |E| = |V | − 1              |E| = ⌊(|V | − 1)3/2            |E| = (|V | − 1)2
 ⌋
  * |V | = 10        0.1226 ms                   0.087 ms                        
- * |V | = 100
+ * |V | = 100       
  * |V | = 1000
  *
+ * 
+ * ) Give an approximate formula (with constants, not big-O)
+for the asymptotic running time of DFS based on your experiments.
+How does this compare with the expected O(|V | + |E|)? If the results
+3
+differ, overview the code of the data structures used for the adjacency
+list and explain what might have happened.
+Rubric: No points if you do not explain how you estimate the constants
+column by column and row by row. Partial credit if the explanation of
+your calculation does not match your measurements.
  *************************************************************************/
 
 public class Main {
