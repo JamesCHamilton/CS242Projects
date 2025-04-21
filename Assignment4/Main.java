@@ -15,8 +15,8 @@ import Assignment4.DFS.Graph;
  *
  *  Course: CS 242
  *  Team members: Edmund Zhong, James Hamilton, Hiruka Gamage
- *  Collaborators: PUT THE NAME OF ANY COLLABORATORS OUTSIDE YOUR TEAM HERE, IF NONE, PUT NONE
- *  References: PUT THE LINKS TO YOUR SOURCES HERE
+ *  Collaborators: None
+ *  References: ChatGPT for question 3 about the question with the formula on how to formulate a formula. 
  *
  *  Assignment: 4
  *  Problem: Depth First Search 
@@ -47,20 +47,16 @@ implementation of DFS.
  * 
  * 2.               |E| = |V | − 1              |E| = ⌊(|V | − 1)3/2            |E| = (|V | − 1)2
 ⌋
- * |V | = 10        0.1226 ms                   0.087 ms                        
- * |V | = 100       0.4625 ms                   0.2646 ms
- * |V | = 1000      0.5757 ms                   3.6417 ms  
+ * |V | = 10        0.1226 ms                   0.087 ms                        0.15 ms
+ * |V | = 100       0.4625 ms                   0.2646 ms                       4.0 ms
+ * |V | = 1000      0.5757 ms                   3.6417 ms                       400 ms
  *
  * 
- * ) Give an approximate formula (with constants, not big-O)
-for the asymptotic running time of DFS based on your experiments.
-How does this compare with the expected O(|V | + |E|)? If the results
-3
-differ, overview the code of the data structures used for the adjacency
-list and explain what might have happened.
-Rubric: No points if you do not explain how you estimate the constants
-column by column and row by row. Partial credit if the explanation of
-your calculation does not match your measurements.
+ * From my results, DFS takes about 0.0006 × (|V| + |E|) milliseconds to run. This makes sense because the time should grow with how many nodes and edges there are. 
+    In my code, I used an adjacency list, which just means every node has a list of its neighbors. In my code, I used an adjacency list, which just means every node has a list of its neighbors.
+    This is good for DFS because when we go through each node, we can quickly loop through its neighbors without wasting time. 
+    Since we only visit each node and edge once, the runtime grows the way it’s supposed to.
+
  *************************************************************************/
 
 public class Main {
