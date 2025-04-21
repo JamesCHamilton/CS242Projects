@@ -2,6 +2,12 @@ package Assignment4;
 import java.util.Random;
 import java.util.Scanner;
 import Assignment4.DFS.Graph;
+
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: April 20,2025
+// Purpose/Description: evaluating experimentally the performance of an efficient implementation of DFS. 
+// Visible Methods and Data: main(String[] args)
+
 /*************************************************************************
  *
  *  Pace University

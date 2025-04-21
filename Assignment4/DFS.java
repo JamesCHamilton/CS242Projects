@@ -2,6 +2,11 @@ package Assignment4;
 
 import java.util.*;
 
+// Author: James Hamilton, Edmund Zhong, Hiruka Gamage Ahelpa
+// Date: April 20,2025
+// Purpose/Description: evaluating experimentally the performance of an efficient implementation of DFS. 
+// Visible Methods and Data: addEdge(int u, int v), DFS(), printTimes(), DFSVisit(int u)
+
 public class DFS {
     static class Graph {
         int V;
